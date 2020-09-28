@@ -54,4 +54,8 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">notifications, notification log</string>
 
+    <!-- Kyuofox Customisation -->
+    <string name="kyuofox_customisation_title">Kyuofox Customisation</string>
+    <string name="kyuofox_customisation_summary">Keep the flow on!</string>
+
 </resources>

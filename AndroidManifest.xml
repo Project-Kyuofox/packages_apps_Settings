@@ -3490,5 +3490,19 @@
         </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
+
+        <!-- Kyuofox Customisation activity -->
+        <activity android:name=".Settings$KyuofoxCustomisationActivity"
+                  android:label="@string/kyuofox_customisation_title"
+                  android:icon="@drawable/ic_homepage_kyuofoxcustomisation"
+                  android:parentActivityName="com.android.settings">
+            <intent-filter>
+                <action android:name="com.android.settings.action.SETTINGS"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.kyuofox.customisation.KyuofoxCustomisation"/>
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/kyuofox_customisation_summary"/>
+        </activity>
     </application>
 </manifest>

@@ -28,7 +28,10 @@ android_library {
         "framework-wifi-vendor-hide-access-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: [
+        "src/**/*.java",
+        "src_customisation/**/*.java"
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -65,6 +68,13 @@ android_library {
         "app-compat-annotations",
         "telephony-ext",
     ],
+
+    resource_dirs: [
+        "res-customisation",
+        "res",
+    ],
+
+    aaptflags: ["--extra-packages com.kyuofox.customisation"],
 }
 
 platform_compat_config {
@@ -84,7 +94,6 @@ android_app {
         "settings-platform-compat-config",
     ],
     static_libs: ["Settings-core"],
-    resource_dirs: [],
     optimize: {
         proguard_flags_files: ["proguard.flags"],
     },

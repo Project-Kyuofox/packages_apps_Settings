@@ -243,4 +243,9 @@ public class Settings extends SettingsActivity {
      */
     public static class MediaControlsSettingsActivity extends SettingsActivity {}
 
+    /**
+     * Kyuofox custom activities
+     */
+    public static class KyuofoxCustomisationActivity extends SettingsActivity {}
+
 }
