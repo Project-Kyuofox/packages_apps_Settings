@@ -17,4 +17,8 @@
     <string name="selinux_status_disabled">Disabled</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
+    
+    <!-- Kyuofox version -->
+    <string name="kyuofox_version">Kyuofox version</string>
+    
 </resources>
