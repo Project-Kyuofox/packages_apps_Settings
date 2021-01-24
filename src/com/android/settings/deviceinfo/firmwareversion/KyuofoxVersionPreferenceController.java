@@ -26,6 +26,7 @@ public class KyuofoxVersionPreferenceController extends BasePreferenceController
 
     @VisibleForTesting
     private static final String KYUOFOX_VERSION_PROPERTY = "ro.kyuofox.build.version";
+    private static final String KYUOFOX_BUILD_TYPE = "ro.kyuofox.buildtype";
 
     public KyuofoxVersionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
@@ -38,7 +39,12 @@ public class KyuofoxVersionPreferenceController extends BasePreferenceController
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KYUOFOX_VERSION_PROPERTY,
-                mContext.getString(R.string.device_info_default));
+     String kyuofoxVer =  SystemProperties.get(KYUOFOX_VERSION_PROPERTY);
+     String kyuofoxType = SystemProperties.get(KYUOFOX_BUILD_TYPE);
+
+      if (!kyuofoxVer.isEmpty() && !kyuofoxType.isEmpty())
+	    return kyuofoxVer + " /" + "/ " + kyuofoxType;
+	else
+            return mContext.getString(R.string.unknown);
     }
 }
