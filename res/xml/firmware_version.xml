@@ -29,6 +29,22 @@
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+        
+    <!-- Kyuofox version -->
+    <Preference
+        android:key="kyuofox_version"
+        android:title="@string/kyuofox_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.KyuofoxVersionPreferenceController"/>
+        
+    <!-- Phone Specs -->
+    <Preference
+        android:key="phone_specs"
+        android:title="@string/specs_title"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SpecsPreferenceController"/>
 
     <!-- Security patch -->
     <Preference
@@ -45,14 +61,6 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>
         
-    <!-- Kyuofox version -->
-    <Preference
-        android:key="kyuofox_version"
-        android:title="@string/kyuofox_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.KyuofoxVersionPreferenceController"/>
-
     <!-- Baseband -->
     <Preference
         android:key="base_band"

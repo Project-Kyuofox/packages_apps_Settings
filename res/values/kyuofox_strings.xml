@@ -21,4 +21,12 @@
     <!-- Kyuofox version -->
     <string name="kyuofox_version">Kyuofox version</string>
     
+    <!-- Kyuofox Settings -->
+
+    <string name="kyuofox_settings_title">Kyuofox Customisation</string>
+    <string name="kyuofox_settings_summary">Keep the Flow on!</string>
+
+    <!-- Specs -->
+    <string name="specs_title">Phone Specifications</string>
+    
 </resources>
